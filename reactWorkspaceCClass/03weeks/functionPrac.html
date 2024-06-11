@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functionPrac</title>
+    <script>
+        function arrayMake() {
+            let workArray = [];
+            for(var i=0;i<3;i++) {
+                workArray[i]= Number(prompt(i+"번째 숫자 입력!",0));
+                console.log(workArray[i]);
+            }
+            console.log(`${workArray} 중에서`)
+            console.log(`최솟값 = ${min(workArray)}`)
+        }
+        function min(array) {
+            let output = array[0]
+            for (const item of array) {
+                if (output > item) {
+                    output = item;
+                }
+            }
+            return output;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <button onclick="arrayMake()">3개의 숫자중 최소값 구하기</button>
+    </header>
+</body>
+</html>

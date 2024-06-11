@@ -1,0 +1,20 @@
+{
+  "name": "04weeks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.js",
+  "scripts": {
+    "start": "node sample.js",
+    "start1": "node index_first.js",
+    "start2": "node index_second.js",
+    "start3": "node index_third.js",
+    "start4": "node index_four.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
